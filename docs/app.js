@@ -472,7 +472,7 @@ const TrailsBuilder = {
     //   bbox / contour  → sticker pixel coordinates (0..width/height)
     //   vector points   → pen digitizer coordinates (scaled + offset)
     const VEC_SCALE = 8.0;
-    const VEC_OFFSET_X = 15250;
+    const VEC_OFFSET_X = 15150;
     const VEC_OFFSET_Y = 200;
 
     // Bounding box in PIXEL space (NOT digitizer space).
