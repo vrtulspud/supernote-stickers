@@ -504,7 +504,7 @@ const TrailsBuilder = {
     buf.push(..._PAGE_CONST);
     buf.push(..._TOOL_NAME);
 
-    // Bounding box (5 × i32)
+    // Bounding box (6 × i32)
     packI32LE(buf, minX);
     packI32LE(buf, minY);
     packI32LE(buf, avgX);
