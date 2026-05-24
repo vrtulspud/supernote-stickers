@@ -344,7 +344,7 @@ def _build_stroke(
     device: str,
     screen_w: int,
     screen_h: int,
-    sticker_width: int = 180,
+    sticker_width: int = 512,
     _x_offset: float = 0.0,
     _y_offset: float = 0.0,
 ) -> bytes:
