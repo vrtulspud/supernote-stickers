@@ -389,7 +389,7 @@ def _build_stroke(
     #   vector points   → pen digitizer coordinates (scaled + offset)
     # Verified against official christmas2025.snstk Christmas Dog sticker.
     _VEC_SCALE = 8.0
-    _VEC_OFFSET_X = 15300
+    _VEC_OFFSET_X = 15100
     _VEC_OFFSET_Y = 200
 
     # Bounding box in PIXEL space (NOT digitizer space).
