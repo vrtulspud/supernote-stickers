@@ -471,7 +471,7 @@ const TrailsBuilder = {
     // Two coordinate spaces (verified against official christmas2025.snstk):
     //   bbox / contour  → sticker pixel coordinates (0..width/height)
     //   vector points   → pen digitizer coordinates (scaled + offset)
-    const VEC_SCALE = 9.0;
+    const VEC_SCALE = 8.0;
     const VEC_OFFSET_X = 15200;
     const VEC_OFFSET_Y = 200;
 
@@ -504,7 +504,7 @@ const TrailsBuilder = {
     buf.push(..._PAGE_CONST);
     buf.push(..._TOOL_NAME);
 
-    // Bounding box (6 × i32)
+    // Bounding box (5 × i32)
     packI32LE(buf, minX);
     packI32LE(buf, minY);
     packI32LE(buf, avgX);
