@@ -523,7 +523,7 @@ const TrailsBuilder = {
     // X-mirroring + centering offsets applied here only (not in contour/bbox)
     // because the firmware horizontally flips rendered vector strokes.
     // Empirically-determined offsets align the rendered strokes with the bitmap.
-    const _xOff = xOffset !== null ? xOffset : stickerWidth / 2;
+    const _xOff = xOffset !== null ? xOffset : stickerWidth / 1;
     packU32LE(buf, nVec);
     for (const [x, y] of vectorPts) {
       const mirroredX = (stickerWidth - 1) - x - _xOff;
