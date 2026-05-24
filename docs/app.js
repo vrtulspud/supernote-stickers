@@ -22,7 +22,7 @@ const AA_LEVELS = [
   0x8F, 0x9F, 0xAF, 0xBF, 0xCF, 0xDF, 0xEF,
 ];
 
-const DEFAULT_STICKER_SIZE = 180;
+const DEFAULT_STICKER_SIZE = 512;
 
 // ---------------------------------------------------------------------------
 // Floyd-Steinberg dithering — works directly from RGBA imageData
@@ -472,7 +472,7 @@ const TrailsBuilder = {
     //   bbox / contour  → sticker pixel coordinates (0..width/height)
     //   vector points   → pen digitizer coordinates (scaled + offset)
     const VEC_SCALE = 8.0;
-    const VEC_OFFSET_X = 1520;
+    const VEC_OFFSET_X = 15300;
     const VEC_OFFSET_Y = 200;
 
     // Bounding box in PIXEL space (NOT digitizer space).
