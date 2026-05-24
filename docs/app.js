@@ -461,7 +461,7 @@ const TrailsBuilder = {
    * @param {number} screenH   Screen height
    * @returns {Uint8Array}  Stroke data bytes
    */
-  _buildStroke(contourPts, strokeNb, device, screenW, screenH, stickerWidth = 512, xOffset = null, yOffset = 100) {
+  _buildStroke(contourPts, strokeNb, device, screenW, screenH, stickerWidth = 512, xOffset = 100, yOffset = 10) {
     // Dense vector points for pen trajectory (firmware needs many points)
     const vectorPts = this._interpolateContour(contourPts, 2.0);
     const nVec = vectorPts.length;
